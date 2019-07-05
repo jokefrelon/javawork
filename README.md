@@ -9,4 +9,8 @@
 
 </br>javac Scanner.java</br>java Scanner
 
+</br>javac july_4.java</br>java july_4
+
+</br>javac july_5.java</br>java july_5
+
 即可运行上面代码片段.
