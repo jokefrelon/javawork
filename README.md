@@ -6,4 +6,7 @@
 </br>javac sort2.java</br>java july3_21
 
 </br>javac sort3.java</br>java sort3
+
+</br>javac Scanner.java</br>java Scanner
+
 即可运行上面代码片段.
