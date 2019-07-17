@@ -1477,131 +1477,27 @@ Windows 平台（DOS 命令行下）： C:\> set CLASSPATH=C:\users\jack\java\cl
 UNIX 平台（Bourne shell 下）：# CLASSPATH=/home/jack/java/classes; export CLASSPATH
 ~~~
 
-<font style="color:#119048"><b>     1 text      </b></font><br>
-
-<font style="color:slateblue"><b>    2 text      </b></font><br>
-
-<font style="color:lightskyblue"><b>       3 text        </b></font><br>
-
-<font style="color:darkorange"><b>       4 text        </b></font>
-
-<br><font style="color:palevioletred"><b>       5 text        </b></font>
-
-<br><font style="color:burlywood"><b>       7 text        </b></font>
-
-<br><font style="color:greenyellow"><b>       8 text        </b></font>
-
-<br><font style="color:deeppink"><b>       9 text        </b></font>
-
-<br><font style="color:teal"><b>     0 text      </b></font>
-
-<br><font style="color:palegreen"><b>     01 text      </b></font>
-
-<br><font style="color:rgb(190, 100, 90)"><b>     02 text      </b></font>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#<font style="color:#119048"><b>     1 text      </b></font><br>
+#
+#<font style="color:slateblue"><b>    2 text      </b></font><br>
+#
+#<font style="color:lightskyblue"><b>       3 text        </b></font><br>
+#
+#<font style="color:darkorange"><b>       4 text        </b></font>
+#
+#<br><font style="color:palevioletred"><b>       5 text        </b></font>
+#
+#<br><font style="color:burlywood"><b>       7 text        </b></font>
+#
+#<br><font style="color:greenyellow"><b>       8 text        </b></font>
+#
+#<br><font style="color:deeppink"><b>       9 text        </b></font>
+#
+#<br><font style="color:teal"><b>     0 text      </b></font>
+#
+#<br><font style="color:palegreen"><b>     01 text      </b></font>
+#
+#<br><font style="color:rgb(190, 100, 90)"><b>     02 text      </b></font>
 
 <style>
 div{
