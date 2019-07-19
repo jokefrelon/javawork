@@ -1,6 +1,5 @@
-<h1 style="      text      -align:center; color:#ff1148"> java笔记 </h1>
-    <h2>1.Java继承 </h2> <hr>                  
-继承的概念:<br>
+<h1 style="text-align:center; color:#ff1148"> java笔记 </h1>
+    <h2>1.Java继承 </h2> <hr>
 
 继承是java面向对象编程技术的一块基石，因为它允许创建分等级层次的类。<br>
 继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，<br>或子类从父类继承方法，使得子类具有父类相同的行为。<hr>
@@ -1383,7 +1382,7 @@ import payroll.Employee;
      </b></font>
 
 <h2>package 的目录结构</h2>
-<font style="color:palegreen"><b>   包名成为类名的一部分，正如我们前面讨论的一样。<br><br>
+<font style="color:palegreen"><body>   包名成为类名的一部分，正如我们前面讨论的一样。<br><br>
 包名必须与相应的字节码所在的目录结构相吻合。   </br></font>
 
 下面是管理你自己 java 中文件的一种简单方式：
@@ -1414,7 +1413,7 @@ public class Car {
 类名 -> vehicle.Car<br>
 路径名 -> vehicle\Car.java (在 windows 系统中)
 
-通常，一个公司使用它互联网域名的颠倒形式来作为它的包名.例如：互联网域名是 XXX.com，所有的包名都以 com.xxx开头。包名中的每一个部分对应一个子目录。
+通常，一个公司使用它互联网域名的颠倒形式来作为它的包名.例如：互联网域名是<span>XXX<span>.com，所有的包名都以 com.<span>xxx开头</span>。包名中的每一个部分对应一个子目录。
 
 例如：有一个 com.runoob.test 的包，这个包包含一个叫做 Runoob.java 的源文件，那么相应的，应该有如下面的一连串子目录：
 
@@ -1438,21 +1437,30 @@ class Google {
 
 现在，我们用-d选项来编译这个文件，如下：
 
+~~~
     $javac -d . Runoob.java
+~~~
 
 这样会像下面这样放置编译了的文件：
 
+~~~
     .\com\runoob\test\Runoob.class
     .\com\runoob\test\Google.class
+~~~
+
 
 你可以像下面这样来导入所有 \com\runoob\test\ 中定义的类、接口等：
 
+~~~
     import com.runoob.test.*;
+~~~
 
 编译之后的 .class 文件应该和 .java 源文件一样，它们放置的目录应该跟包的名字对应起来。但是，并不要求 .class 文件的路径跟相应的 .java 的路径一样。你可以分开来安排源码和类的目录。
 
+~~~
     <path-one>\sources\com\runoob\test\Runoob.java
     <path-two>\classes\com\runoob\test\Google.class
+~~~
 
 这样，你可以将你的类目录分享给其他的编程人员，而不用透露自己的源码。用这种方法管理源码和类文件可以让编译器和java 虚拟机（JVM）可以找到你程序中使用的所有类型。
 
@@ -1502,6 +1510,11 @@ UNIX 平台（Bourne shell 下）：# CLASSPATH=/home/jack/java/classes; export 
 <style>
 div{
     background-color: #114848;
-
+    color:black;
+    padding :10px,10px
+}
+body{
+   background-color:#000000;
+   color:white;
 }
 </style>
