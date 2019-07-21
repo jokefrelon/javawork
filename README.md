@@ -369,7 +369,6 @@ public class TestDog{
    }
 }
 ~~~
-
 以上实例编译运行结果如下：
 ~~~
 TestDog.java:30: cannot find symbol
@@ -504,7 +503,7 @@ public class Overloading {
 <br><font style="color:palevioletred"><b>     多态是同一个行为具有多个不同表现形式或形态的能力。
 
 多态就是同一个接口，使用不同的实例而执行不同操作，如图所示：     </b></font>
-
+ 
 <h2>多态的优点</h2>
 <br><font style="color:dimgrey"><b>    1. 消除类型之间的耦合关系<br>
 2. 可替换性<br>
