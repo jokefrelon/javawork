@@ -515,7 +515,7 @@ public class Overloading {
 <h2>多态存在的三个必要条件</h2>
 
 <br><font style="color:burlywood"><b> 继承<br>
-重写<b>
+重写<br>
 父类引用指向子类对象      </b></font>
 
 <br><font style="color:greenyellow"><b>     当使用多态方式调用方法时，首先检查父类中是否有该方法，如果没有，则编译错误；如果有，再去调用子类的同名方法。
@@ -1483,6 +1483,8 @@ UNIX 平台（Bourne shell 下）：# unset CLASSPATH; export CLASSPATH
 Windows 平台（DOS 命令行下）： C:\> set CLASSPATH=C:\users\jack\java\classes
 UNIX 平台（Bourne shell 下）：# CLASSPATH=/home/jack/java/classes; export CLASSPATH
 ~~~
+
+[二进制位移(Java分枝)](./二进制位移(Java分枝).md)
 
 #<font style="color:#119048"><b>     1 text      </b></font><br>
 #
