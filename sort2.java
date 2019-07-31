@@ -1,4 +1,4 @@
-public class july3_21 {
+public class sort2 {
 	    public static void main(String[] args) {
 		            int [] frp={128,234,734,23,345,642,29,9};
 			            String fulkli=sort(frp);
