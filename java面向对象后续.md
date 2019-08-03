@@ -359,14 +359,14 @@ protected
 private
 
 ##特征修饰符
-final			
+final			<br>
 static			<br>
 abstract		<br>
 native			<br>
 transient		<br>
 synchronized	<br>
 volatile		<br>
-
+<hr>
 
 
 ||同一个类|同一个包|不同包的子类|不同包的非子类|
@@ -384,15 +384,141 @@ volatile		<br>
 eg:import package.*;
 <br>导入package下的全部类<br>
 
-^(*￣(oo)￣)^<br><br>如果不同包下有同名类文件,即使导入了该包,使用时也必须要明确该类的包名
+^(￣(oo)￣)^<br><br>
+如果不同包下有同名类文件,即使导入了该包,使用时也必须要明确该类的包名<br>
 
+##进程:正在运行的程序<br>
+##线程:是进程中负责程序执行单元,一个进程至少有一个线程负责该程序运行,
 
+###java 如何运行多线程<br>
+	一.使用thread方式
 
+		1.继承Thread类
+		2.覆盖run()方法
+		3.创建子类对象就是创建线程对象
+		4.调用thread类中的start()方法执行线程
+		^(*￣(oo)￣)^自定义线程都是从run开始执行,由主方法main调用执行
 
+示例代码:
 
+~~~
+class dayu extends Thread{
+	int fork;
+	dayu(int hetyu){
+		this.fork=hetyu;
+	}
+	void stand(){
+		for (int ed=1;ed<20;ed++ ) {
+			System.out.println(fork+"--------"+ed);
+		}
+	}
+	public void run(){
+		stand();
+	}
+	// public void start(){
+	// 	this.run();
+	// }
+}
+class august_3_1{
+	public static void main(String[] args) {
+		dayu gcc = new dayu(211);
+		dayu gc = new dayu(985);
+		gcc.start();
+		gc.start();
+	}
+}
+~~~
 
+	二.使用Runable接口
 
+		1.定义一个类来实现Runable接口
+		2.覆盖Runable接口里的run()方法
+		3.通过Thread类来创建线程对象,并将Runable接口的对象作为Thread类中的构造函数的参数进行传递
+		4.通过Thread类的start()方法开启线程
 
+	三.Runable接口的好处:
+
+		a.避免了继承Thread类接口的单一性
+		b.Runable接口的出现更符合面向对象,将线程单独封装
+		c.降低了耦合性
+
+U•ェ•U<br>示例代码:
+
+~~~
+class ticket implements Runnable{
+	int leftTickets = 100;
+	public void sellTicket(){
+		while(true){
+			if (leftTickets>=1) {
+				System.out.println(Thread.currentThread().getName()+" sell the ticket "+leftTickets--);
+				
+			}
+		}
+		
+	}
+	public void run(){
+		sellTicket();
+	}
+}
+class august_3_2{
+public static void main(String[] args) {
+	ticket person = new ticket();
+	Thread person1 = new Thread (person);
+	Thread person2 = new Thread (person);
+	Thread person3 = new Thread (person);
+	Thread person4 = new Thread (person);
+	person1.start();
+	person2.start();
+	person3.start();
+	person4.start();
+	}
+}
+~~~
+	四.多线程安全问题
+
+a.原因
+	1.线程任务有共享数据
+	2.有多条线程对共享数据操作
+b.解决方法:synchronized
+synchronized(对象){
+	需要同步处理的代码块
+}
+此方法的弊端是:效率低下;
+
+示例代码:
+
+~~~
+class ticket implements Runnable{
+	int leftTickets = 100;
+	Object obj = new Object();
+	public void sellTicket(){
+		while(true){
+			synchronized(obj){
+				if (leftTickets>=1) {
+				System.out.println(Thread.currentThread().getName()+" sell the ticket "+leftTickets--);
+				}
+			}
+		}
+		
+	}
+	public void run(){
+		sellTicket();
+	}
+}
+class august_3_2{
+public static void main(String[] args) {
+	ticket person = new ticket();
+	Thread person1 = new Thread (person);
+	Thread person2 = new Thread (person);
+	Thread person3 = new Thread (person);
+	Thread person4 = new Thread (person);
+	person1.start();
+	person2.start();
+	person3.start();
+	person4.start();
+	}
+}
+~~~
 
 
 
